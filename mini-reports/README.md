@@ -1,27 +1,22 @@
-
+```mermaid
 flowchart TD
+    subgraph "Initial Archive Fetch"
+        A[Fetch Kaggle Data Set] --> B[Force Refresh]
+    end
 
-%% Data Ingestion and Refresh
-A[Force Refresh Kaggle Dataset] --> B[Scrape Gov.uk Webpage]
-B --> C[Download Latest Data]
+    subgraph "Daily ETL Pipeline"
+        B --> BB[Daily Gov.uk Webpage Monitoring]
+        BB --> C[Scrape Gov.uk Webpage]
+        C --> D[Download Latest Data]
+        D --> E[Transform Data in Staging]
+        E --> F[Push Updated Data to Kaggle Dataset]
+        F --> A
+    end
 
-%% Data Transformation and Update
-C --> D[Transform Data in Staging<br/>(e.g., Remove First Column)]
-D --> E[Push Updated Data<br/>to Kaggle Dataset]
-
-%% Visualization and Reporting
-E --> F[Retrieve Latest Data<br/>for Visualization]
-F --> G[Generate Visualizations<br/>(Timeline, Median Price, Momentum)]
-G --> H[Generate PDF Report]
-
-%% Final Step: Publish Report
-H --> I[Push PDF Report<br/>to GitHub]
-
-%% Add Labels for Clarity
-classDef ingestion fill:#f9f,stroke:#333,stroke-width:2px;
-classDef transform fill:#bbf,stroke:#333,stroke-width:2px;
-classDef viz fill:#bfb,stroke:#333,stroke-width:2px;
-class A,B,C ingestion;
-class D,E transform;
-class F,G,H,I viz;
-    
+    subgraph "Monthly PDF Report Pipeline"
+        B --> G[Retrieve Latest Data for Visualization]
+        G --> GG[Data Engineering &<br/>Transformation]
+        GG --> H[Generate Visualizations<br/>e.g. For Timeline, Median Price, Momentum,<br/>etc.]
+        H --> I[Automatically Generate<br/>PDF Report]
+        I --> J[Deploy PDF Report<br/>to GitHub]
+    end
