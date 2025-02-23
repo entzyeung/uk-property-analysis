@@ -1,10 +1,6 @@
-Below is a sample README file in Markdown for your mini report PDF:
+# Mini Report: Automated London Property Price Analysis Report
 
----
-
-# Mini Report: Automated UK Property Price Analysis Report
-
-This mini report is a fully automated PDF generated monthly as part of our comprehensive pipeline for analyzing UK property transactions. The report includes six graphs—each analysis topic is presented first in English, then in Traditional Chinese—providing a clear, bilingual overview of market trends.
+This mini report is a fully automated PDF generated monthly report as part of our comprehensive pipeline for analyzing UK property transactions (The latest Full PDF report is deployed to the [Download Folder on GitHub](https://github.com/entzyeung/uk-property-analysis/tree/main/full-reports)). The report includes six graphs in 3 analysis topics. Each analysis topic is presented first in English, then in Traditional Chinese, providing a clear and bilingual overview of market trends.
 
 ## Overview
 
@@ -85,10 +81,6 @@ The mini report contains the following visualizations:
 
 ## Conclusion
 
-This mini report provides a quick yet comprehensive snapshot of the UK property market trends. By combining automated data collection, processing, and bilingual visualization, the report makes it easy to track and understand market dynamics.
+This mini report serves as a demo of the final output of the wider data analysis pipeline. By combining automated data collection, processing, and bilingual visualization, the mini report makes it easy understand what the wider project is doing.
 
 For any questions or further details, please contact **Lorentz Yeung**.
-
----
-
-Feel free to modify this README to better suit your needs or to add any additional information.
