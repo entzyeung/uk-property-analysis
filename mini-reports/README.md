@@ -1,3 +1,25 @@
+Below is a sample README file in Markdown for your mini report PDF:
+
+---
+
+# Mini Report: Automated UK Property Price Analysis Report
+
+This mini report is a fully automated PDF generated monthly as part of our comprehensive pipeline for analyzing UK property transactions. The report includes six graphs—each analysis topic is presented first in English, then in Traditional Chinese—providing a clear, bilingual overview of market trends.
+
+## Overview
+
+The mini report is a concise, visual summary of the latest trends in the UK property market. It includes three key analysis topics:
+
+- **Timeline Count Analysis:** Displays monthly property transaction counts.
+- **Median Price Timeline:** Shows the evolution of median property prices.
+- **Momentum Analysis:** Visualizes daily transaction momentum via rolling averages.
+
+Each topic is presented in both English and Traditional Chinese, ensuring accessibility to a diverse audience.
+
+## Pipeline Architecture
+
+The report generation is integrated within a larger automated data pipeline. The process is illustrated in the Mermaid diagram below:
+
 ```mermaid
 flowchart TD
     subgraph "Initial Archive Fetch"
@@ -20,3 +42,53 @@ flowchart TD
         H --> I[Automatically Generate<br/>PDF Report]
         I --> J[Deploy PDF Report<br/>to GitHub]
     end
+```
+
+### How It Works
+
+1. **Initial Archive Fetch & Daily ETL Pipeline:**  
+   - The system forces a refresh of the Kaggle dataset.
+   - Daily, it monitors the Gov.uk webpage, scrapes and downloads the latest data, transforms it, and pushes the updated dataset back to Kaggle.
+
+2. **Monthly PDF Report Pipeline:**  
+   - The latest data is retrieved and further engineered for visualization.
+   - Six visualizations are automatically generated (three topics, each in English and Traditional Chinese).
+   - A PDF report is compiled in landscape format, with each graph on a separate page.
+   - The final report is deployed to GitHub.
+
+## Graphs Included
+
+The mini report contains the following visualizations:
+
+1. **Timeline Count Analysis:**  
+   - **English Version:** Monthly property transaction counts.  
+   - **Chinese Version:** Same analysis presented in Traditional Chinese.
+
+2. **Median Price Timeline:**  
+   - **English Version:** Evolution of median property prices.  
+   - **Chinese Version:** Same timeline in Traditional Chinese.
+
+3. **Momentum Analysis:**  
+   - **English Version:** Daily transaction momentum with rolling averages.  
+   - **Chinese Version:** Same momentum analysis in Traditional Chinese.
+
+## Usage
+
+- **Automatic Updates:**  
+  The mini report is updated monthly as part of our fully automated pipeline.
+
+- **Accessing the Report:**  
+  The latest PDF report is deployed to the [mini-reports folder on GitHub](https://github.com/entzyeung/uk-property-analysis/tree/main/mini-reports).
+
+- **Report Format:**  
+  The report is generated in landscape orientation. Each page hosts a single visualization, and a final blank page indicates the end of the report.
+
+## Conclusion
+
+This mini report provides a quick yet comprehensive snapshot of the UK property market trends. By combining automated data collection, processing, and bilingual visualization, the report makes it easy to track and understand market dynamics.
+
+For any questions or further details, please contact **Lorentz Yeung**.
+
+---
+
+Feel free to modify this README to better suit your needs or to add any additional information.
