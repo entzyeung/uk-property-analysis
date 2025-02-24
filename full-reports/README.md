@@ -46,37 +46,19 @@ flowchart TD
 ## **Topics Covered in the Full Report**
 This full report expands upon the mini report with **deeper insights and additional analyses**.
 
-1. **London’s Median Price Trends**
-   - Monthly **median property prices** across **all of London**.
-   - District-level **median price breakdowns**.
-
-2. **Regional Price Movements**
-   - **Trends in median prices by district**.
-   - **Comparison between different boroughs**.
-   - **Historical price shifts across London**.
-
-3. **Heatmaps for Market Insights**
-   - **Average property price distribution heatmap** (color-coded for affordability).
-   - **Transaction volume heatmap** (shows most active areas for property sales).
-
-4. **Momentum & Market Dynamics**
-   - **Daily transaction momentum analysis** with moving averages.
-   - **Short-term vs long-term trends** in London’s housing market.
-
-5. **Top 10 Boroughs & Postal Codes**
-   - **Ranking of highest median-priced boroughs**.
-   - **Most active property transaction locations** (ranked by sales volume).
-
-6. **Annual Growth Rate Analysis**
-   - **Year-over-year price growth by borough**.
-   - **Comparison of current vs last year’s trends**.
-
-7. **Property Type-Specific Trends**
-   - Breakdown of **median price movements by property type** (Detached, Semi-Detached, Terraced, Flats).
-   - **Growth comparison per housing category**.
-
-8. **London's Housing Market Since 2020**
-   - **Long-term trends in sales volume & prices** from **2020 to present**.
+  Each section is clearly separated by comments.
+  - Section 1: Overall monthly median price trend  
+  - Section 2: District-level median price trends (with separate detailed subplots)  
+  - Section 3: Heat map for average prices  
+  - Section 4: Heat map for transaction counts  
+  - Section 5: Top 20 postcode-based transaction count heat map  
+  - Section 6: 4 property types median price trends and table  
+  - Section 7: Highest value cities analysis (using total transaction values and new properties)  
+  - Section 8: YoY median price growth (same period comparison)  
+  - Section 9: YoY median price growth (same month comparison)  
+  - Section 10: Timeline comparison for transaction count and median price  
+  - Section 11: Transaction momentum analysis  
+  - Section 12: Monthly growth table for median and mean prices  
 
 ## **Report Format**
 - **Landscape PDF format** for better visualization.
@@ -93,3 +75,6 @@ This full report expands upon the mini report with **deeper insights and additio
 This **full report provides an extensive, automated analysis of London’s real estate market**, helping professionals, investors, and homeowners stay informed with **data-driven insights**. With automated **data collection, transformation, visualization, and reporting**, this project delivers **accurate and timely information every month**.
 
 For inquiries or collaboration opportunities, please contact **Lorentz Yeung**.
+
+
+
