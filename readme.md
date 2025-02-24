@@ -1,5 +1,7 @@
 # London Property Market Analysis Pipeline
 
+This project started in early 2021.
+
 This repository contains a fully automated data engineering pipeline for monitoring, collecting, and analyzing UK property price data sourced directly from the UK Government’s HM Land Registry. The pipeline integrates daily data ingestion, transformation, and visualization to generate monthly PDF reports—both a concise mini report and an in-depth full report—offering timely insights into the London property market.
 
 ## Table of Contents
