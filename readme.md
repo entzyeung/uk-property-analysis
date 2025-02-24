@@ -75,7 +75,7 @@ flowchart TD
     subgraph "Monthly PDF Report Pipeline"
         B --> G[Retrieve Latest Data for Visualization]
         G --> GG[Data Engineering & Transformation]
-        GG --> H[Generate Visualizations<br/>(Timeline, Median Price, Momentum, etc.)]
+        GG --> H[Generate Visualizations<br/>e.g. Timeline, Median Price, Momentum, etc.]
         H --> I[Automatically Generate PDF Report]
         I --> J[Deploy PDF Report to GitHub]
     end
@@ -95,7 +95,7 @@ flowchart TD
 
 
 ## Report Generation
-1. **Mini Report**
+### **Mini Report**
    - **Purpose:**
        Provides a concise, visual snapshot of the latest trends in the UK property market.
    - **Content:**
@@ -109,7 +109,7 @@ flowchart TD
        Landscape-oriented PDF with one chart per page and a concluding blank page.
 
 
-2. **Full Report**
+### **Full Report**
    - **Purpose:**
      Offers a comprehensive, detailed analysis of London property transactions with deeper insights and additional visualizations.
    - **Content:**
@@ -131,6 +131,7 @@ Ensure you have Python 3.x installed. Then, install the necessary dependencies u
 ```bash
 pip install requests beautifulsoup4
 ```
+
 For Kaggle API integration (used within Kaggle Notebooks), ensure you have the kaggle_secrets package set up.
 
 
