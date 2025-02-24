@@ -52,7 +52,7 @@ flowchart TD
    - A PDF report is compiled in landscape format, with each graph on a separate page.
    - The final report is deployed to GitHub.
 
-## Graphs Included
+## Report Generated Included
 
 The mini report contains the following visualizations:
 

@@ -1,5 +1,5 @@
 # UK Property Price Official Data (Monthly Update)
-[Kaggle Data Location](https://www.kaggle.com/datasets/lorentzyeung/price-paid-data-202304/)
+[Downloaded data are pushed to Kaggle](https://www.kaggle.com/datasets/lorentzyeung/price-paid-data-202304/)
 
 This repository contains a Python script that monitors the UK Government’s Price Paid Data webpage for updates and automatically downloads the latest property price data. It is designed to:
 
@@ -13,7 +13,7 @@ This repository contains a Python script that monitors the UK Government’s Pri
   - A `last_update.txt` file to keep track of the latest update.
 
 - **Update a Kaggle Dataset:**  
-  The script then updates your Kaggle dataset with the following behavior:
+  The script then updates the Kaggle dataset with the following behavior:
   - **Accumulates monthly CSV files:** Each new monthly file is added to the dataset without replacing older monthly files.
   - **Replaces `pp-complete.csv` and `last_update.txt`:** These files are updated each time a new version is released.
   - A metadata file (`dataset-metadata.json`) is generated to ensure proper dataset updates via the Kaggle API.
