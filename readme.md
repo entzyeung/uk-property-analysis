@@ -11,9 +11,6 @@ This repository contains a fully automated data engineering pipeline for monitor
 - [Report Generation](#report-generation)
   - [Mini Report](#mini-report)
   - [Full Report](#full-report)
-- [Installation and Dependencies](#installation-and-dependencies)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -82,29 +79,31 @@ flowchart TD
 ```
 
 ## Data Collection and ETL Process
+
    - **Monitoring:**
-       The script continuously monitors the Gov.uk Price Paid Data page for any change in the “current month” update.
+     The script continuously monitors the Gov.uk Price Paid Data page for any change in the “current month” update.
    - **Data Download:**
-       Upon detecting an update, a new monthly CSV file is downloaded and archived alongside previous monthly files. Simultaneously, the complete dataset file (pp-complete.csv) is refreshed.
+     Upon detecting an update, a new monthly CSV file is downloaded and archived alongside previous monthly files. Simultaneously, the complete dataset file (pp-complete.csv) is refreshed.
    - **Kaggle Dataset Update:**
-       The pipeline uses the Kaggle API to update the dataset:
-          - **Accumulates** monthly CSV files.
-          - **Replaces** the complete dataset and update tracking file (last_update.txt).
-          - **Generates** a metadata file (dataset-metadata.json) to facilitate proper dataset versioning.
+     The pipeline uses the Kaggle API to update the dataset:
+     - **Accumulates** monthly CSV files.
+     - **Replaces** the complete dataset and update tracking file (last_update.txt).
+     - **Generates** a metadata file (dataset-metadata.json) to facilitate proper dataset versioning.
 
 
 
 ## Report Generation
+
 ### **Mini Report**
    - **Purpose:**
-       Provides a concise, visual snapshot of the latest trends in the UK property market.
+     Provides a concise, visual snapshot of the latest trends in the UK property market.
    - **Content:**
-          - **Timeline Count Analysis:**
-              Monthly property transaction counts in both English and Traditional Chinese.
-          - **Median Price Timeline:**
-              Evolution of median property prices, bilingual.
-          - **Momentum Analysis:**
-              Daily transaction momentum with rolling averages, bilingual.
+     - **Timeline Count Analysis:**
+       Monthly property transaction counts in both English and Traditional Chinese.
+     - **Median Price Timeline:**
+       Evolution of median property prices, bilingual.
+     - **Momentum Analysis:**
+       Daily transaction momentum with rolling averages, bilingual.
    - **Format:**
        Landscape-oriented PDF with one chart per page and a concluding blank page.
 
@@ -116,30 +115,21 @@ flowchart TD
      The report is divided into several sections, including:
      
      * Overall monthly median price trends.
-          * District-level median price trends with detailed subplots.
-          * Heat maps for average prices and transaction counts.
-          * Top 20 postcode-based transaction count analysis.
-          * Detailed breakdown of property types, high-value city analyses, and year-over-year growth comparisons.
-          - Timeline and momentum analysis.
+     * District-level median price trends with detailed subplots.
+     * Heat maps for average prices and transaction counts.
+     * Top 20 postcode-based transaction count analysis.
+     * Detailed breakdown of property types, high-value city analyses, and year-over-year growth comparisons.
+     * Timeline and momentum analysis.
    - **Format:**
      PDF report with one visualization per page, currently presented in Traditional Chinese (with plans for an English version).
 
+## **License**
 
-## Installation and Dependencies
+This project is licensed under the MIT License.
 
-Ensure you have Python 3.x installed. Then, install the necessary dependencies using:
+## **Contact**
 
-```bash
-pip install requests beautifulsoup4
-```
-
-For Kaggle API integration (used within Kaggle Notebooks), ensure you have the kaggle_secrets package set up.
-
-
-
-
-
-
+For questions, collaborations, or further details, please contact Lorentz Yeung.
 
 
 
