@@ -114,11 +114,11 @@ flowchart TD
      Offers a comprehensive, detailed analysis of London property transactions with deeper insights and additional visualizations.
    - **Content:**
      The report is divided into several sections, including:
-          - Overall monthly median price trends.
-          - District-level median price trends with detailed subplots.
-          - Heat maps for average prices and transaction counts.
-          - Top 20 postcode-based transaction count analysis.
-          - Detailed breakdown of property types, high-value city analyses, and year-over-year growth comparisons.
+     * Overall monthly median price trends.
+          * District-level median price trends with detailed subplots.
+          * Heat maps for average prices and transaction counts.
+          * Top 20 postcode-based transaction count analysis.
+          * Detailed breakdown of property types, high-value city analyses, and year-over-year growth comparisons.
           - Timeline and momentum analysis.
    - **Format:**
      PDF report with one visualization per page, currently presented in Traditional Chinese (with plans for an English version).
