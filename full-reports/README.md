@@ -61,10 +61,9 @@ This full report expands upon the mini report with **deeper insights and additio
   - Section 12: Monthly growth table for median and mean prices  
 
 ## **Report Format**
-- **Landscape PDF format** for better visualization.
-- **Each chart is presented in both English & Traditional Chinese**.
+- **PDF format**
+- **Each chart is presented in Traditional Chinese only.**.
 - **One visualization per page** for clarity.
-- **Final blank page indicates the end of the report**.
 
 ## **Accessing the Report**
 - The latest version of the **full report** is published in the [GitHub full-reports folder](https://github.com/entzyeung/uk-property-analysis/tree/main/full-reports).
